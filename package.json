@@ -7,6 +7,9 @@
   "license": "Apache-2.0",
   "type": "module",
   "exports": "./biome.jsonc",
+  "files": [
+    "/biome.jsonc"
+  ],
   "scripts": {
     "test": "biome check --error-on-warnings",
     "format": "biome check --write --error-on-warnings"
