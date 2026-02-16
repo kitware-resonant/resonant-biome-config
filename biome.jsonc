@@ -24,7 +24,6 @@
         "noVoid": "error",
         "useSimplifiedLogicExpression": "error",
         "useWhile": "error",
-        "noUselessUndefined": "error",
         "useMaxParams": "error",
         "noUselessCatchBinding": "error"
       },
