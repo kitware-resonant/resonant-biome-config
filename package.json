@@ -15,9 +15,9 @@
     "format": "biome check --write --error-on-warnings"
   },
   "peerDependencies": {
-    "@biomejs/biome": "~2.3.10"
+    "@biomejs/biome": "~2.4.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.10"
+    "@biomejs/biome": "^2.4.1"
   }
 }
