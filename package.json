@@ -11,7 +11,7 @@
     "/biome.jsonc"
   ],
   "scripts": {
-    "test": "biome check --error-on-warnings",
+    "test": "biome ci --error-on-warnings",
     "format": "biome check --write --error-on-warnings"
   },
   "peerDependencies": {
