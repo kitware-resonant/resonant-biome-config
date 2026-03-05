@@ -11,13 +11,13 @@
     "/biome.jsonc"
   ],
   "scripts": {
-    "test": "biome check --error-on-warnings",
+    "test": "biome ci --error-on-warnings",
     "format": "biome check --write --error-on-warnings"
   },
   "peerDependencies": {
-    "@biomejs/biome": "~2.4.1"
+    "@biomejs/biome": "~2.4.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.1"
+    "@biomejs/biome": "^2.4.5"
   }
 }
