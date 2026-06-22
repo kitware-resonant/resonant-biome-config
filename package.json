@@ -3,21 +3,21 @@
   "version": "0.0.0",
   "description": "A shared Biome linter configuration for Resonant projects.",
   "repository": "github:kitware-resonant/resonant-biome-config",
-  "author": "Kitware, Inc. <kitware@kitware.com>",
   "license": "Apache-2.0",
+  "author": "Kitware, Inc. <kitware@kitware.com>",
   "type": "module",
   "exports": "./biome.jsonc",
   "files": [
     "/biome.jsonc"
   ],
   "scripts": {
-    "test": "biome ci --error-on-warnings",
-    "format": "biome check --write --error-on-warnings"
-  },
-  "peerDependencies": {
-    "@biomejs/biome": "~2.5.0"
+    "format": "biome check --write --error-on-warnings",
+    "test": "biome ci --error-on-warnings"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": "~2.5.0"
   }
 }
