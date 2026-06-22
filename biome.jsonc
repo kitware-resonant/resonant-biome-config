@@ -20,17 +20,24 @@
         "noExcessiveCognitiveComplexity": "error",
         "noForEach": "error",
         "noImplicitCoercions": "error",
+        "noRedundantDefaultExport": "error",
+        "noUselessCatchBinding": "error",
+        "noUselessReturn": "error",
         "noUselessStringConcat": "error",
         "noVoid": "error",
-        "useSimplifiedLogicExpression": "error",
-        "useWhile": "error",
+        "useArrayFind": "error",
         "useMaxParams": "error",
-        "noUselessCatchBinding": "error"
+        "useSimplifiedLogicExpression": "error",
+        "useWhile": "error"
       },
       "correctness": {
         "noGlobalDirnameFilename": "error",
         "noProcessGlobal": "error",
         "noUndeclaredVariables": "error",
+        // noUnresolvedImports has too many bugs, including:
+        // https://github.com/biomejs/biome/issues/8849
+        "noUnresolvedImports": "off",
+        "noUnusedInstantiation": "error",
         "useImportExtensions": {
           "level": "error",
           "options": {
@@ -39,10 +46,7 @@
             }
           }
         },
-        "useSingleJsDocAsterisk": "error",
-        // noUnresolvedImports has too many bugs, including:
-        // https://github.com/biomejs/biome/issues/8849
-        "noUnresolvedImports": "off"
+        "useSingleJsDocAsterisk": "error"
       },
       "performance": {
         "noAwaitInLoops": "error",
@@ -64,9 +68,19 @@
         "useAsConstAssertion": "error",
         "useBlockStatements": "error",
         "useConsistentArrayType": "error",
+        "useConsistentArrowReturn": "error",
+        "useConsistentEnumValueType": "error",
+        "useConsistentMethodSignatures": {
+          "level": "error",
+          "options": {
+            "style": "method"
+          }
+        },
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
+        "useErrorCause": "error",
         "useForOf": "error",
+        "useGlobalThis": "error",
         "useGroupedAccessorPairs": "error",
         "useNamingConvention": {
           "level": "error",
@@ -79,12 +93,12 @@
         "useObjectSpread": "error",
         "useShorthandAssign": "error",
         "useSingleVarDeclarator": "error",
+        "useSpreadOverApply": "error",
         "useSymbolDescription": "error",
         "useThrowNewError": "error",
         "useThrowOnlyError": "error",
         "useTrimStartEnd": "error",
-        "useUnifiedTypeSignatures": "error",
-        "useConsistentArrowReturn": "error"
+        "useUnifiedTypeSignatures": "error"
       },
       "suspicious": {
         "noAlert": "error",
@@ -96,29 +110,39 @@
           }
         },
         "noConstantBinaryExpressions": "error",
+        "noDuplicateDependencies": "error",
         "noEmptyBlockStatements": "error",
+        "noEmptySource": "error",
+        "noEqualsToNull": "error",
         "noEvolvingTypes": "error",
+        "noForIn": "error",
         "noMisplacedAssertion": "error",
+        "noNestedPromises": "error",
+        "noReturnAssign": "error",
+        "noShadow": "error",
         "noSkippedTests": "error",
         "noUnassignedVariables": "error",
+        "noUnnecessaryConditions": "error",
+        "noUnusedExpressions": "error",
         "noVar": "error",
         // useAwait incorrectly flags cases when a promise is returned
         // https://github.com/biomejs/biome/issues/1161
         "useAwait": "off",
+        "useArraySortCompare": "error",
         "useErrorMessage": "error",
-        "useGuardForIn": "error",
         "useNumberToFixedDigitsArgument": "error",
         "useStaticResponseMethods": "error",
-        "useStrictMode": "error",
-        "noUnusedExpressions": "error",
-        "noEmptySource": "error",
-        "noDuplicateDependencies": "error"
+        "useStrictMode": "error"
       }
     }
   },
   "assist": {
     "actions": {
       "source": {
+        "noDuplicateClasses": "on",
+        "useSortedAttributes": "on",
+        "useSortedEnumMembers": "on",
+        "useSortedPackageJson": "on",
         "useSortedProperties": "on"
       }
     }
