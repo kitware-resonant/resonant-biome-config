@@ -3,4 +3,12 @@
   extends: [
     'github>kitware-resonant/.github:renovate-library-core.json5',
   ],
+  packageRules: [
+    {
+      matchPackageNames: ['@biomejs/biome'],
+      matchUpdateTypes: ['major', 'minor'],
+      groupName: 'biome',
+      automerge: false,
+    },
+  ],
 }
