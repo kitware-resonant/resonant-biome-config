@@ -8,6 +8,7 @@
   "type": "module",
   "exports": "./biome.jsonc",
   "files": [
+    "NOTICE",
     "/biome.jsonc"
   ],
   "scripts": {
