@@ -2,7 +2,10 @@
   "name": "@resonant/biome-config",
   "version": "0.0.0",
   "description": "A shared Biome linter configuration for Resonant projects.",
-  "repository": "github:kitware-resonant/resonant-biome-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitware-resonant/resonant-biome-config.git"
+  },
   "license": "Apache-2.0",
   "author": "Kitware, Inc. <kitware@kitware.com>",
   "type": "module",
