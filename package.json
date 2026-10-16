@@ -8,6 +8,7 @@
   "type": "module",
   "exports": "./biome.jsonc",
   "files": [
+    "NOTICE",
     "/biome.jsonc"
   ],
   "scripts": {
@@ -15,7 +16,7 @@
     "test": "biome ci --error-on-warnings"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.0"
+    "@biomejs/biome": "2.5.15"
   },
   "peerDependencies": {
     "@biomejs/biome": "~2.5.0"
