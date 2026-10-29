@@ -1,9 +1,11 @@
 # resonant-biome-config
+
 [![npm (scoped)](https://img.shields.io/npm/v/@resonant/biome-config)](https://www.npmjs.com/package/@resonant/biome-config)
 
 A shared Biome linter configuration for Resonant projects.
 
 ## Installation
+
 ```bash
 npm install --save-dev @biomejs/biome @resonant/biome-config
 ```
