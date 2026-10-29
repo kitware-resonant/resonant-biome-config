@@ -19,7 +19,7 @@
     "test": "biome ci"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.3"
+    "@biomejs/biome": "2.6.4"
   },
   "peerDependencies": {
     "@biomejs/biome": "~2.6.0"
