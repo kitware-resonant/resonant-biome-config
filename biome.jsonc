@@ -18,15 +18,20 @@
     "rules": {
       "complexity": {
         "noExcessiveCognitiveComplexity": "error",
+        "noExcessiveNestedCallbacks": "error",
         "noForEach": "error",
         "noImplicitCoercions": "error",
+        "noPlaywrightUselessAwait": "error",
         "noRedundantDefaultExport": "error",
+        "noUnnecessaryTemplateExpression": "error",
         "noUselessCatchBinding": "error",
         "noUselessReturn": "error",
         "noUselessStringConcat": "error",
         "noVoid": "error",
         "useArrayFind": "error",
+        "useArraySome": "error",
         "useMaxParams": "error",
+        "useRegexpTest": "error",
         "useSimplifiedLogicExpression": "error",
         "useWhile": "error"
       },
@@ -53,15 +58,22 @@
         "noDelete": "error",
         "useTopLevelRegex": "error"
       },
+      "security": {
+        "useIframeSandbox": "error"
+      },
       "style": {
         "noCommonJs": "error",
         // noDoneCallback flags on Vite context ?
         "noDoneCallback": "error",
         "noExportedImports": "error",
         "noInferrableTypes": "error",
+        "noInlineStyles": "error",
         "noNamespace": "error",
         "noNegationElse": "error",
         "noNestedTernary": "error",
+        "noPlaywrightElementHandle": "error",
+        "noPlaywrightEval": "error",
+        "noPlaywrightWaitForSelector": "error",
         "noSubstr": "error",
         "noUnusedTemplateLiteral": "error",
         "noYodaExpression": "error",
@@ -76,12 +88,22 @@
             "style": "method"
           }
         },
+        "useConsistentTestIt": {
+          "level": "error",
+          "options": {
+            "function": "test",
+            "withinDescribe": "test"
+          }
+        },
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
+        "useDomQuerySelector": "error",
         "useErrorCause": "error",
         "useForOf": "error",
         "useGlobalThis": "error",
         "useGroupedAccessorPairs": "error",
+        "useImportsFirst": "error",
+        "useNamedCaptureGroup": "error",
         "useNamingConvention": {
           "level": "error",
           "options": {
@@ -91,18 +113,30 @@
         "useNumberNamespace": "error",
         "useNumericSeparators": "error",
         "useObjectSpread": "error",
+        "useReduceTypeParameter": "error",
         "useShorthandAssign": "error",
         "useSingleVarDeclarator": "error",
         "useSpreadOverApply": "error",
         "useSymbolDescription": "error",
+        "useTestHooksInOrder": "error",
+        "useTestHooksOnTop": "error",
+        "useThisInClassMethods": {
+          "level": "error",
+          "options": {
+            "ignoreClassesWithImplements": "all",
+            "ignoreOverrideMethods": true
+          }
+        },
         "useThrowNewError": "error",
         "useThrowOnlyError": "error",
         "useTrimStartEnd": "error",
+        "useUnicodeRegex": "error",
         "useUnifiedTypeSignatures": "error"
       },
       "suspicious": {
         "noAlert": "error",
         "noBitwiseOperators": "error",
+        "noConditionalExpect": "error",
         "noConsole": {
           "level": "error",
           "options": {
@@ -111,13 +145,21 @@
         },
         "noConstantBinaryExpressions": "error",
         "noDuplicateDependencies": "error",
+        "noDuplicateSelectors": "error",
         "noEmptyBlockStatements": "error",
+        "noEmptyObjectKeys": "error",
         "noEmptySource": "error",
         "noEqualsToNull": "error",
         "noEvolvingTypes": "error",
         "noForIn": "error",
+        "noLoopFunc": "error",
         "noMisplacedAssertion": "error",
         "noNestedPromises": "error",
+        "noPlaywrightForceOption": "error",
+        "noPlaywrightNetworkidle": "error",
+        "noPlaywrightPagePause": "error",
+        "noPlaywrightWaitForNavigation": "error",
+        "noPlaywrightWaitForTimeout": "error",
         "noReturnAssign": "error",
         "noShadow": "error",
         "noSkippedTests": "error",
@@ -129,7 +171,9 @@
         // https://github.com/biomejs/biome/issues/1161
         "useAwait": "off",
         "useArraySortCompare": "error",
+        "useBaseline": "error",
         "useErrorMessage": "error",
+        "useExpect": "error",
         "useNumberToFixedDigitsArgument": "error",
         "useStaticResponseMethods": "error",
         "useStrictMode": "error"
