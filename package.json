@@ -15,8 +15,8 @@
     "/biome.jsonc"
   ],
   "scripts": {
-    "format": "biome check --write",
-    "test": "biome ci"
+    "format": "biome check --write --error-on-warnings",
+    "test": "biome ci --error-on-warnings"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4"
