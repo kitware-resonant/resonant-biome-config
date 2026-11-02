@@ -11,6 +11,7 @@
   },
   "linter": {
     "domains": {
+      "playwright": "all",
       "project": "all",
       "test": "all",
       "types": "all"
