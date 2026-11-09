@@ -11,6 +11,7 @@ npm install --save-dev @biomejs/biome @resonant/biome-config
 ```
 
 In `biome.json`:
+
 ```json
 {
   "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
